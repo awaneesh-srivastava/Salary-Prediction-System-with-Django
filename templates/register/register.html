@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block tittle %} register {% endblock tittle %}
+{% block body %}
+<form method="POST" class="form-group">
+	{% csrf_token %}
+	{{ form }}
+	<button type="submit" class="btn btn-success">Register</button>
+    </form>
+{% endblock body %}
